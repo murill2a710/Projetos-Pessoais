@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato | Murillo Souza Alexandre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><nav aria-label="Menu principal"><b>Murillo Souza Alexandre</b>
+<a href="index.html">Home</a><a href="curriculo.html">Currículo</a>
+<a href="github.html">GitHub</a><a href="servicos.html">Serviços</a>
+<a href="contato.html" class="on">Contato</a></nav></header>
+<main>
+
+<h1 id="topo">Peça uma proposta</h1>
+<p>Preencha o formulário e eu retorno no horário escolhido.</p>
+<form action="https://formspree.io/f/SEU_ID" method="post">
+<div><label for="nome">Nome completo</label><input type="text" id="nome" name="nome" required></div>
+<div><label for="tel">Telefone</label><input type="tel" id="tel" name="telefone" placeholder="(27) 90000-0000" required></div>
+<div><label for="email">E-mail</label><input type="email" id="email" name="email" required></div>
+<fieldset><legend>Você é</legend><label class="opt"><input type="radio" name="tipo" value="fisica" checked> Pessoa física</label><label class="opt"><input type="radio" name="tipo" value="juridica"> Pessoa jurídica</label></fieldset>
+<div><label for="horario">Melhor horário para contato</label><select id="horario" name="horario"><option>Manhã</option><option>Tarde</option><option>Noite</option></select></div>
+<div><label for="servico">Tipo de serviço</label><select id="servico" name="servico"><option>Site estático (1 a 2 páginas)</option><option>Site estático (3 a 5 páginas)</option><option>Site estático (mais de 5 páginas)</option><option>Site dinâmico</option><option>Site super avançado</option></select></div>
+<fieldset><legend>Incluir também</legend><label class="opt"><input type="checkbox" name="extra" value="dominio"> Domínio</label><label class="opt"><input type="checkbox" name="extra" value="logo"> Logotipo</label><label class="opt"><input type="checkbox" name="extra" value="seo"> Otimização para buscas</label></fieldset>
+<div><label for="orc">Faixa de investimento: <output id="o">R$ 1.000</output></label><input type="range" id="orc" name="investimento" min="300" max="5000" step="100" value="1000" oninput="document.getElementById('o').textContent='R$ '+Number(this.value).toLocaleString('pt-BR')"></div>
+<div><label for="desc">Descreva o que você precisa</label><textarea id="desc" name="descricao" rows="5" required></textarea></div>
+<label class="opt"><input type="checkbox" required> Aceito ser contatado(a) para receber a proposta</label>
+<div><button type="submit">Enviar pedido</button> <button type="reset" style="background:var(--ln)">Limpar</button></div></form>
+</main>
+<footer>© 2026 Murillo Souza Alexandre · <a href="#topo">Voltar ao topo</a> · </footer>
+</body></html>
